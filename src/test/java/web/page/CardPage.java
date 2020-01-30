@@ -28,7 +28,7 @@ public class CardPage {
         codeCardField.setValue(info.getCodeCard());
         ownerNameCardField.setValue(info.getOwnerNameCard());
         continueButton.click();
-        return new CardPage();
+        return this;
     }
 
     public CardPage validCreditCard(DataHelper.AuthInfo info) {
@@ -39,7 +39,7 @@ public class CardPage {
         codeCardField.setValue(info.getCodeCard());
         ownerNameCardField.setValue(info.getOwnerNameCard());
         continueButton.click();
-        return new CardPage();
+        return this;
     }
 
     public CardPage notValidCashCard(DataHelper.AuthInfo info) {
@@ -50,7 +50,7 @@ public class CardPage {
         codeCardField.setValue(info.getCodeCard());
         ownerNameCardField.setValue(info.getOwnerNameCard());
         continueButton.click();
-        return new CardPage();
+        return this;
     }
 
     public CardPage notValidCreditCard(DataHelper.AuthInfo info) {
@@ -61,7 +61,7 @@ public class CardPage {
         codeCardField.setValue(info.getCodeCard());
         ownerNameCardField.setValue(info.getOwnerNameCard());
         continueButton.click();
-        return new CardPage();
+        return this;
     }
 //    public ErrorLoginPage notValidLogin(DataHelper.AuthInfo info) {
 //        loginField.setValue(info.getLogin());
